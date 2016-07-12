@@ -6,7 +6,7 @@
 * PHP 5.5 or newer
 * 64-bit PHP or gmp module
 * Web server must allow UDP connections
-* IP whitelisted in `query_ip_whitelist.txt` on all TeamSpeak 3 servers you wish to connect to.
+* IP whitelisted in `query_ip_whitelist.txt` on all TeamSpeak 3 servers you wish to connect to
 
 ## License
     Game Server Info Page
