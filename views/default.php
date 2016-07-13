@@ -19,6 +19,9 @@
 		body, .credits, a {
 			color: <?php echo $branding["darkmode"] ? "#FFFFFF" : "#000000"; ?>
 		}
+		th, .btn-primary {
+			color: <?php echo $branding["darkmode"] ? "#000000" : "#FFFFFF"; ?>
+		}
 		.credits {
 			font-size: 8pt;
 		}
