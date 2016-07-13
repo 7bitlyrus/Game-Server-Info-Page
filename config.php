@@ -8,4 +8,16 @@ $servers = Array(
 	Array("ts3", "Teamspeak Server", "192.0.2.2", 9987, 10011, "serveradmin", "password")
 );
 
+$branding = Array(
+	"logo" => "http://placehold.it/400x100?text=Game+Server+Info+Page",
+	"url" => "http://example.com",
+	"title" => "Game Server Info Page",
+	"accentcolor" => "#9E9E9E",
+	"bgcolor" => "#ffffff",
+	"darkmode" => false
+);
+
+$behavior = Array(
+	"refreshrate" => "10"
+);
 ?>
