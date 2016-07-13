@@ -35,7 +35,7 @@ foreach ($servers as $server) {
 				foreach($ts3->clientList() as $client) {
 					if($client["client_type"]) continue;
 					$ctime = time() - $client["client_lastconnected"];
-					$ctime_r = $ctime > 59*60 + 59 ? floor($ctime/(60*60)).":".str_pad(floor(($ctime%60)/60), 2, 0, STR_PAD_LEFT).":".str_pad($ctime%60, 2, 0, STR_PAD_LEFT) : str_pad(floor($ctime/60), 2, 0, STR_PAD_LEFT).":".str_pad($ctime%60, 2, 0, STR_PAD_LEFT);
+					$ctime_r = $ctime > 59*60 + 59 ? str_pad(floor($ctime/(60*60)), 2, 0, STR_PAD_LEFT).":".str_pad(floor(($ctime%60)/60), 2, 0, STR_PAD_LEFT).":".str_pad($ctime%60, 2, 0, STR_PAD_LEFT) : str_pad(floor($ctime/60), 2, 0, STR_PAD_LEFT).":".str_pad($ctime%60, 2, 0, STR_PAD_LEFT);
 					array_push($clients, Array((string)$client, $ctime_r, $ctime));
 				}
 				usort($clients, function ($a, $b) {
