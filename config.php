@@ -18,7 +18,7 @@ $branding = Array(
 );
 
 $behavior = Array(
-	"refreshrate" => "10",
-	"timeout" => "1"
+	"refreshrate" => 10,
+	"timeout" => 1
 );
 ?>
