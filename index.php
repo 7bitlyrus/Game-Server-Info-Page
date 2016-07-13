@@ -18,7 +18,7 @@ foreach ($servers as $server) {
 		switch ($server[0]) {
 			case 'source':
 				$Query = new SourceQuery( );
-				$Query->Connect( $server[2], $server[3], 1, SourceQuery::SOURCE);
+				$Query->Connect( $server[2], $server[3], $behavior["timeout"], SourceQuery::SOURCE);
 				$info = $Query->GetInfo( );
 				$players = $Query->GetPlayers( );
 				$players_r = Array();
