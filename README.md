@@ -2,7 +2,10 @@
 Webpage to display server info related to gaming communities.
 
 ## Downloading
-**The "Download to ZIP" option on GitHub does not work correctly for this repository.** You must [clone this repository with git](https://help.github.com/articles/cloning-a-repository/).
+**The "Download to ZIP" option on GitHub does not work correctly for this repository.** You must [clone this repository with git](https://help.github.com/articles/cloning-a-repository/) using the `--recursive` flag. The following command is recommended:
+```shell
+bash git clone --recursive https://github.com/IanMurray/Game-Server-Info-Page
+```
 
 ## Requirements
 * PHP 5.5 or newer
