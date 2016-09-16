@@ -12,7 +12,6 @@ if(!isset($_GET['n'])) {
 		try {
 			if(file_exists("modules/{$server[0]}.php")) {
 				require("modules/{$server[0]}.php");
-				echo("Loaded modules/{$server[0]}.php<br>");
 			} else {
 				throw new Exception("Module not found.");
 			}

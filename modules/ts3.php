@@ -9,8 +9,8 @@ foreach($ts3->clientList() as $client) {
 	if($client["client_type"]) continue;
 	$ctime = time() - $client["client_lastconnected"];
 
-	$hours = str_pad(floor($ctime/(3600)), 2, 0, STR_PAD_LEFT);
-	$mins  = str_pad(floor(($ctime%60)/60), 2, 0, STR_PAD_LEFT);
+	$hours = str_pad(floor($ctime/3600), 2, 0, STR_PAD_LEFT);
+	$mins  = str_pad(floor($ctime%60s/60), 2, 0, STR_PAD_LEFT);
 	$secs  = str_pad($ctime%60, 2, 0, STR_PAD_LEFT);
 
 	$ctime_r = $ctime >= 3600 ? "{$hours}:{$mins}:{$secs}" : "{$mins}:{$secs}";
