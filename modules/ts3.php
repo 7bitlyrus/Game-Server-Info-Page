@@ -1,4 +1,11 @@
 <?php
+/*
+Teamspeak 3 Module
+
+Server Array Format:
+Array("ts3", "<name>", "<ip>", <port>, <query port>, "<query username>", "<query password>")
+*/
+
 require_once("ts3-php-framework/libraries/TeamSpeak3/TeamSpeak3.php");
 date_default_timezone_set("UTC"); 
 
@@ -10,7 +17,7 @@ foreach($ts3->clientList() as $client) {
 	$ctime = time() - $client["client_lastconnected"];
 
 	$hours = str_pad(floor($ctime/3600), 2, 0, STR_PAD_LEFT);
-	$mins  = str_pad(floor($ctime%60s/60), 2, 0, STR_PAD_LEFT);
+	$mins  = str_pad(floor($ctime%60/60), 2, 0, STR_PAD_LEFT);
 	$secs  = str_pad($ctime%60, 2, 0, STR_PAD_LEFT);
 
 	$ctime_r = $ctime >= 3600 ? "{$hours}:{$mins}:{$secs}" : "{$mins}:{$secs}";

@@ -4,3 +4,6 @@
 [submodule "ts3-php-framework"]
 	path = ts3-php-framework
 	url = https://github.com/mdoelker/ts3-php-framework
+[submodule "PHP-Minecraft-Query"]
+	path = PHP-Minecraft-Query
+	url = https://github.com/xPaw/PHP-Minecraft-Query

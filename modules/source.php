@@ -1,4 +1,11 @@
 <?php
+/*
+Source Module
+
+Server Array Format:
+Array("source", "<name>", "<ip>", <port>)
+*/
+
 require_once("PHP-Source-Query/SourceQuery/bootstrap.php");
 use xPaw\SourceQuery\SourceQuery;
 
@@ -7,8 +14,8 @@ $Query->Connect( $server[2], $server[3], $behavior["timeout"], SourceQuery::SOUR
 
 $info = $Query->GetInfo( );
 $players = $Query->GetPlayers( );
-$players_r = Array();
 
+$players_r = Array();
 foreach ($players as $player) {
 	array_push($players_r, Array($player["Name"], $player["TimeF"]));
 }
