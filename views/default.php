@@ -75,7 +75,7 @@
 							<?php foreach($servers_r as $server_id => $server): ?>
 									<tr>
 									<td><?php echo $server[0] ?></td>
-									<td><a type="button" data-toggle="modal" data-target="#players<?php echo $server_id; ?>"><?php echo $server[2] ?>/<?php echo $server[3] ?> Users</a></td>
+									<td><a type="button" data-toggle="modal" data-target="#players<?php echo $server_id; ?>"><?php echo "{$server[2]}/{$server[3]}"; ?> Users</a></td>
 									<td><?php echo $server[4] ?></td>
 									<td><a type="button" class="btn btn-primary" href="<?php echo $server[1] ?>">Join Server</a></td>
 								</tr>

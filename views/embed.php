@@ -39,7 +39,7 @@
 			?>
 			<div class="progress">
 				<div class="progress-bar" role="progressbar" aria-valuenow="<?php echo $server[2] ?>" aria-valuemin="<?php echo $server[2] ?>" aria-valuemax="<?php echo $server[3] ?>" style="width: <?php echo $precent; ?>%;">
-					<span><a href="?" target="_parent" title="<?php echo $server[0] ?>"><?php echo $server[0] . ": " .  $server[2] . "/" . $server[3]; ?></a></span>
+					<span><a href="?" target="_parent" title="<?php echo $server[0] ?>"><?php echo "{$server[0]}: {$server[2]}/{$server[3]}"; ?></a></span>
 				</div>
 			</div>
 		<?php endforeach ?>
