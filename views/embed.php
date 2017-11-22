@@ -33,7 +33,15 @@
 	</head>
 	<body>
 		<?php
-		foreach($servers_r as $server):
+		if(isset($_GET["only"])) {
+			prn($servers_r[$_GET["only"]]);
+		} else {
+			foreach($servers_r as $id => $server):
+				prn($server);
+			endforeach;
+		}
+
+		function prn($server) {
 			$max = $server[3] == 0 ? 1 : $server[3];
 			$precent = $server[2]/$max*100;
 			?>
@@ -42,6 +50,6 @@
 					<span><a href="?" target="_parent" title="<?php echo $server[0] ?>"><?php echo "{$server[0]}: {$server[2]}/{$server[3]}"; ?></a></span>
 				</div>
 			</div>
-		<?php endforeach ?>
+		<?php } ?>
 	</body>
 </html>

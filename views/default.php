@@ -115,7 +115,7 @@
 					</div><!-- /.modal -->
 			<?php endforeach ?>
 			<div>
-				<div class="text-center credits">Powered by <a href="https://github.com/IanMurray/Game-Server-Info-Page">Game Server Info Page</a>. <a href="?v=embed">Embed</a></div>
+				<div class="text-center credits">Powered by <a href="https://github.com/IanMurray/Game-Server-Info-Page">Game Server Info Page</a>. <a href="?v=embed">Embed</a> (<a href="?v=embed&only=0">Single</a>)</div>
 			</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
